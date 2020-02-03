@@ -9,29 +9,36 @@
     line-height: 1em;
 }
 
+ @media (max-width: 1024px) {
   .frame::-webkit-scrollbar {
-    background-color: rgba(0,0,0,.5);
-    width: 18px;
-    
+    -webkit-appearance: none;
+  }
 }
-      .frame::-webkit-scrollbar:vertical {
-     background-color: rgba(0,0,0,.5);
-    width: 11px;
+@media (max-width: 1024px) {
+  .frame::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
 }
-
+.frame::-webkit-scrollbar:vertical {
+  width: 12px;
+}
 .frame::-webkit-scrollbar:horizontal {
-    height: 11px;
-}  
-        .frame::-webkit-scrollbar-track {
-    
+  height: 12px;
+}
+.frame::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.24);
+}
+@media (max-width: 1024px) {
+  .frame::-webkit-scrollbar-thumb {
     border-radius: 10px;
+    border: 4px solid #ffffff;
+  }
+}
+.frame::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #ffffff;
 }
 
-.frame::-webkit-scrollbar-thumb {
-    border-radius: 8px;
-  
-    
-}
         </style>
     </head>
 <div class="frame">
